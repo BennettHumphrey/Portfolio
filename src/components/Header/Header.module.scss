@@ -1,0 +1,127 @@
+@import '../../variables.scss';
+
+
+
+
+ .header {
+    background: $bgHeader;
+    color: $text;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 0;
+
+    @media screen and (min-width: $md) {
+        flex-direction: row;
+    }
+ }
+
+ .titleText {
+    margin-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 20;
+    min-height: 450px;
+
+    @media screen and (min-width: $md) {
+        width: 60%;
+    }
+
+    * {
+        margin-top: 1rem;
+        margin-right: 4rem;
+        margin-left: 5vw;
+    }
+
+    p{
+        font-size: 2rem;
+    }
+
+    h2 {
+        padding-left: 0rem;
+        font-size: 2rem;
+        font-weight: 700;
+        color: $accentText;
+        margin-left: 7vw;
+    }
+
+    h1 {
+        max-width: 400px;
+    }
+
+    button {
+        margin-inline: auto;
+        justify-self: center;
+        padding-block: 1rem;
+        padding-inline: 3rem;
+        border-radius: 100px;
+        border: 1px solid $accentText;
+        transition-duration: 700ms;
+        background: $bgOpacity;
+        margin-top: 3rem;
+        width: 200px;
+
+        @media screen and (min-width: $xs) {
+            margin-top: 4rem;
+        }
+
+        // @media screen and (min-width: $md) {
+        //     margin-top: 4rem;
+        //     margin-left: 5vw;
+        // }
+
+        &:hover {
+            background: $accentText;
+            color: $bgMain;
+        }
+    }
+
+ }
+
+ .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    height: 75vw;
+
+    @media screen and (min-width: $md) {
+        bottom: 0;
+    }
+
+    * {
+        position: absolute;
+        margin: auto;
+
+        @media screen and (min-width: $md) {
+        }
+
+    }
+
+    .profile {
+        z-index: 30;
+        width: 90vw;
+        transform: translateY(-6.4vw);
+
+        @media screen and (min-width: $md) {
+            width: 60vw;
+            transform: translate(9vw, 8.2vw);
+        }
+
+    }
+
+    .splash {
+        z-index: 10;
+        width: 90vw;
+        transform: translateY(-9vw);
+
+        @media screen and (min-width: $md) {
+            width: 60vw;
+            transform: translate(9vw, 1.4vw);
+        }
+
+    }
+
+ }

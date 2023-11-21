@@ -1,8 +1,13 @@
 import React from 'react'
+import About from '../About/About'
+import Projects from '../Projects/Projects'
 
 const MainBody = () => {
   return (
-    <div>MainBody</div>
+    <div>
+      <About  />
+      <Projects  />
+    </div>
   )
 }
 

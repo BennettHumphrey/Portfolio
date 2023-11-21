@@ -2,7 +2,13 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <div className={styles.temp} >
+      <div  />
+      <div  />
+      <div  />
+      <div  />
+      <div  />
+    </div>
   )
 }
 
